@@ -11,13 +11,18 @@ class MyApp extends StatelessWidget {
           title: Text("Align и Center"),
           centerTitle: true,
         ),
-        body: const Align(  //Сам виджет Align
-          alignment: Alignment.topCenter,  //выравниваем сверху по центру
-          child: Text( //1 дочерний элемент
-            'Align',
-            style: TextStyle(fontSize: 30),
-          ),
+        body: const Center(
+          child: Text("Center", style: TextStyle(fontSize: 30),),
+
         ),
+
+        // body: const Align(  //Сам виджет Align
+        //   alignment: Alignment.topCenter,  //выравниваем сверху по центру
+        //   child: Text( //1 дочерний элемент
+        //     'Align',
+        //     style: TextStyle(fontSize: 30),
+        //   ),
+        // ),
       ),
     );
   }
